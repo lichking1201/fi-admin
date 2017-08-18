@@ -1,0 +1,13 @@
+---
+pid: run/static_server.pid
+timeout: 10
+wait: 10
+log: log/static_server.log
+max_conns: 1024
+port: 6700
+require: []
+environment: production
+max_persistent_conns: 512
+servers: 1
+threaded: true
+daemonize: true
