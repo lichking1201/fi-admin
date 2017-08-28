@@ -1,13 +1,17 @@
+/**
+ * 全局样式，也包括font-awesome图标字体和element ui库样式的引入
+ * 涉及到全局样式的请在此文件修改
+*/
+
 @import './variables';
 @import 'src/assets/fonts/scss/font-awesome';
+@import '../node_modules/element-ui/lib/theme-default/index.css';
+
 body {
   margin: 0px;
   padding: 0px;
-  /*background: url(assets/bg1.jpg) center !important;
-		background-size: cover;*/
-  // background: #1F2D3D;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei,
-    SimSun, sans-serif;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }

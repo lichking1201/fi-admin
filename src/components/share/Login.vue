@@ -8,9 +8,13 @@
 export default {
   name: 'Login',
   mounted() {
-    // axios.get(app.api.login).then((res) => {
-    //   location.href = res
-    // })
+    axios.get(app.api.login, {
+      params: {
+        url: this.$route.query.redirectUrl || ''
+      }
+    }).then((res) => {
+      location.href = res
+    })
   }
 }
 </script>

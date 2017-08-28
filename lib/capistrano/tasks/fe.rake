@@ -4,7 +4,6 @@ namespace :fe do
     run_locally do
       execute :rm, '-rf', "public/"
       execute :sh, "fe.sh", env
-      execute :rm, '-rf', "public/fis-tmp"
       execute 'cp', '-r', 'public/.', "public-#{env}/"
     end
   end

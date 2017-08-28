@@ -1,13 +1,17 @@
+/**
+ * 入口文件，引入全局插件，UI库，实例化Vue，启动应用
+ */
 import Vue from 'vue'
-import App from './App'
-import router from './router'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import { constantPlugin } from 'src/common/constant'
+import 'src/common/common'
+import router from './router'
+import App from './App'
 
 Vue.use(ElementUI)
+Vue.use(constantPlugin)
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

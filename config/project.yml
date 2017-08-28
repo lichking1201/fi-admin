@@ -1,0 +1,32 @@
+---
+# 项目名
+name: admin
+# 项目标题
+title: 管理系统模板
+# 端口
+port: 3383
+# 静态cdn地址
+cdn: //
+
+# 线上环境
+production:
+  env: production
+  domain: //
+  api: //
+  user_center: http://uc.fishtrip.cn/
+  server: r10
+
+# 测试环境
+alpha:
+  env: alpha
+  domain: //
+  api: //
+  user_center: http://uc.alpha.fishtrip.cn/
+  server: a3
+
+# 开发环境
+development:
+  env: development
+  domain: http://www.lvh.me
+  api: //
+  user_center: http://uc.alpha.fishtrip.cn/

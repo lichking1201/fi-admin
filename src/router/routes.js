@@ -2,7 +2,7 @@ export default {
   routes: [
     {
       path: '/',
-      component: require('src/components/Main'),
+      component: require('src/components/share/Main'),
       children: [
         {
           path: '/home',
@@ -14,7 +14,7 @@ export default {
     },
     {
       path: '/login',
-      component: require('src/components/Login'),
+      component: require('src/components/share/Login'),
       hidden: true,
     },
   ],

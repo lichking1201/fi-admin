@@ -44,6 +44,27 @@ app 命名空间约束
   data: <any>,
   msg: <string>
 }
+
+分页接口
+request params
+{
+  order_by: <string> 排序的key,
+  order: <0|1> 0升序 1降序,
+  page: <int> 当前分页
+}
+
+response data
+{
+  code: <int>,
+  data: {
+    data: <array>,
+    page: <int>,
+    rows: <int>,
+    total: <int>,
+    total_page: <int>
+  },
+  msg: <string>
+}
 ```
 
 // api 接口权限

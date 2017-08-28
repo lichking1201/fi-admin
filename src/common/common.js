@@ -1,19 +1,27 @@
+/**
+ * 全局js引入及配置
+ */
 import Vue from 'vue'
 import axios from 'axios'
 import moment from 'moment'
 import api from 'src/common/api'
+import * as util from 'src/common/util'
+import { constant } from 'src/common/constant'
 import _ from 'lodash'
+import Cookies from 'js-cookie'
 
 import { Notification } from 'element-ui'
 
 window.Vue = Vue
-window._ = lodash
+window._ = _
 window.moment = moment
 window.axios = axios
+window.util = util
 window.app = window.app || {}
 
 Object.assign(app, {
   api,
+  constant,
 })
 
 axios.interceptors.request.use(

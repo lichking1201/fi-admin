@@ -23,7 +23,13 @@ if (process.argv.length >= 3) {
 } else {
   console.log('当前已有路由：')
   routes.routes[0].children.forEach(function(child) {
-    console.log(child.path.substr(1))
+    if (child.children) {
+      child.children.forEach(function(subChild) {
+        console.log(child.path + subChild.path)
+      })
+    } else {
+      console.log(child.path.substr(1))
+    }
   })
   console.log('请配置新路由')
   prompt.get(
